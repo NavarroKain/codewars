@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binary Addition</title>
+</head>
+<body>
+
+<h1>Binary Addition</h1>
+<h2>Description:</h2>
+
+<p>Implement a function that successfully adds two numbers together and returns their solution in binary. The conversion can be done before, or after the addition of the two.</p>
+
+<p>The binary number returned should be a string!</p>
+
+<p><small>Source: http://www.codewars.com/</small></p>
+
+<script>
+function addBinary( a, b ){
+  var sum = a + b,
+  		binary = '';
+  while ( sum > 0 ) {
+    binary = ( sum % 2 ) + binary;
+    sum = Math.floor( sum / 2 );
+  }
+  return binary;
+}
+
+</script>
+
+</body>
+</html>
